@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+.belownavbar{
+    display:flex;
+    justify-content:space-evenly;
+}
+h2{
+    text-align: center;
+    font-style:italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbarNav li a:hover{
+    color:orangered;
+}

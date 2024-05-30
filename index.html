@@ -3,250 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
- #navbarSupportedContent{
-        margin-left:400px;
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+<script>
+    function add(){
+        alert("Book added to cart");
     }
-.navbar {
-  background-color: #6C55A3;
-  border-radius: 0;
-  border: none;
-}
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left:20px;
-}
-.navbar-nav > li > a {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight:normal;
-}
-.navbar-nav > li > a:hover {
-    color: orange;
-  }
-h1{
-    text-align: center;
-}
-.card{
-border:1.5px solid black;
-background-color: bisque;
-display:flex;
-}
-#contact{
-  height:500px;
-  width:fit-content;
-    border:2px solid black;
-    padding:20px;
-    margin-left: 35%;
-}
-body{
-  background-color: beige;
-  font-family:sans-serif;
-}
-.card-text > ul >li{
-  font-size:2em;
-}
-   </style>
-   <script>
-    function ordernow()
-    {
-        alert('Your order has been placed');
-    }
-    function issue()
-    {
-      alert('We will look into your issue seriously.Thank you for your patience');
-    }
-   </script>
+</script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Shopping website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ink and Imagination</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#accordionExample">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#products">Products</a>
-              </li>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-              </li>
-          </ul>
-      </div>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Books">Books</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#Books">Best Selling books</a></li>
+                      <li><a class="dropdown-item" href="#fbook">Fiction Books</a></li>
+                      <li><a class="dropdown-item" href="#cbook">Books for children</a></li>
+                    </ul>
+                  </li>
+                  
+                <li class="nav-item"><a class="nav-link" href="#footer">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+<div class="belownavbar">
+    <div>
+        <strong>Free Shipping Item</strong>
+       <p> For all orders over $150</p>
     </div>
-  </nav>
-  
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div>
+        <strong>Money back guarantee</strong>
+       <p> 100% money back guarante</p>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="https://blog.skyelearning.com/hubfs/shutterstock_1206570103.jpg" alt="shopping website">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="https://wallpaperaccess.com/full/2484120.jpg" class="d-block w-100" alt="shopping website">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="https://wallpapers.com/images/hd/amazon-e-commerce-company-csw7ypxppsqd7yyr.jpg" class="d-block w-100" alt="shopping website">
-      </div>
+    <div>
+        <strong>Cash on delivery</strong>
+       <p>Online payments also accepted</p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  </div><br>
-<h3 id="accordionExample" class="mt-3"> About Us</h3>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header mb-0" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         Information about Amazon
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            Amazon is an American multinational technology company  founded on July 5, 1994, by Jeff Bezos in Bellevue, Washington. It is engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.It is considered one of the Big Five American technology companies; the other four are Alphabet (parent company of Google), Apple, Meta (parent company of Facebook), and Microsoft.The company originally started as an online marketplace for books but gradually expanded its offerings to include a wide range of product categories. This diversification led to it being referred to as "The Everything Store"</div>
-      </div>
+    <div>
+        <strong>Help & Support</strong>
+       <p> Call us : + 0123.4567.89</p>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header mb-0" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       Why our products are best ?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            <ul>
-              <li>Amazon is built on innovation</li>
-              <li>We Provide superior customer service</li>
-              <li>We make sure that our customers' requirements are satisfied and are up to the standard </li>
-            </ul></div>
-      </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header mb-0" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Do you have cash on delivery option?
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            Yes, we provide cash on delivery option hence cutomers can pay only once the products are delivered.
-          We do provide 15 days of return option</div>
-      </div>
-    </div>
-</div> <br><br>
 
-<h2 style="text-align:center" id="products" class="mt-5">Hand Bags</h2>
 
-  <div class="products d-flex justify-content-around " id="products">
-<div class="container my-5">
-  <div class="row">
-    <div class="col-md-4 mb-4">
-    
-  <div class="card " style="width: 18rem;margin-right:20px;">
-    <img class="card-img-top" src="https://guhaha.com/wp-content/uploads/2020/06/Firefox_Screenshot_2020-05-28T12-44-25.405Z-1-1024x1024.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Vintage fashion shoulder Bag</h5>
-      <p class="card-text">
-        <ul>
-            <li>100% Genuine Goat Leather. Rugged, Eco-friendly & Affordable. </li>
-            <li>Strong & Durable. This leather satchel features quality stitching, brass buckles & strong zippers</li>
-            <li type="none"><strong>Rs.2899</strong></li>
-        </ul>
-      </p>
-      <a href="#" class="btn btn-primary " onclick="ordernow()">Order Now</a>
-    </div>
-  </div>
-  </div>
-  <div class="col-md-4 mb-4">
-  <div class="card" style="width: 18em;margin-right:20px;">
-    <img class="card-img-top" src="https://3.bp.blogspot.com/-9iJXXc0Yvqk/V4sZgARxqnI/AAAAAAAACFE/3QcprIPImfAK3SuzYmGENpteSytzWzf2gCLcB/s1600/3pcs-set-New-2016-Women-Bags-Sets-Crocodile-Leather-Women-Handbags-Fashion-Lady-Shoulder-Crossbody-Messenger.jpg" alt="Card image cap" >
-    <div class="card-body">
-      <h5 class="card-title">New Fashion hand bag</h5>
-      <p class="card-text">
-        <ul>
-            <li>This handbags for women made of PU leather. The stitching is well made as smoothly to touch. </li>
-            <li>35 x 33 x 15 cm (LxHxW). Handle size: 20 cm. Pouch size: 7.5" (L) x 4.75" (H).</li>
-            <li type="none"><strong>Rs.2599</strong></li>
-
-        </ul>
-      </p>
-      <a href="#" class="btn btn-primary" onclick="ordernow()">Order Now</a>
-    </div>
-  </div>
-  </div>
-  <div class="col-md-4 mb-4">
-  <div class="card" style="width: 18rem;margin-right:20px; height:38rem" id="#cards">
-    <img class="card-img-top" src="https://i.pinimg.com/originals/de/0c/bf/de0cbf6d1e72dd9f6b0d741819236127.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Designer hand bag</h5>
-      <p class="card-text">
-        <ul>
-            <li >Fully nylon lined, strong faux Pu leather double shoulder riveted straps</li>
-            <li type="none"><strong>Rs.5999</strong></li>
-
-        </ul>
-      </p>
-      <a href="#" class="btn btn-primary " onclick="ordernow()">Order Now</a>
-    </div>
-  </div>
-</div>
-  <div class="col-md-4 mb-4">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.I3dWhQGbSYhAR3pAa5lZQAHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Boutique hand bag</h5>
-      <p class="card-text">
-        <ul>
-            <li class="text-md">The medium hobo bag is crafted from luxurious vegan leather, ensuring a delightful combination of softness and comfort.</li>
+      
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="https://wallpaperaccess.com/full/922671.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="https://assets.entrepreneur.com/content/3x2/2000/20151006165136-introvert-reading-books-.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="https://whytoread.com/wp-content/uploads/2014/09/Reading.jpg" class="d-block w-100" alt="...">
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+         <br>
         
-         <li type="none"><strong>Rs.6699</strong></li>
-        </ul>
-
-      </p>
-      <a href="#" class="btn btn-primary " onclick="ordernow()">Order Now</a>
+    <!-- Book Cards -->
+    <div id="Books">
+    <h2>Best Selling Books</h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.booksense.com/images/649/633/9781668633649.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> <a href="book1.html" target="_blank">Maximum Ride</a></h5>
+                        <p class="card-text">James Pattersom</p>
+                        <p class="card-text">$29.55</p>
+                        <p class="card-text"> This Book centers on the adventures of Maximum "Max" Ride and her family, called the Flock, who are winged human-avian hybrids created at a lab called The School. </p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a href="book1.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://ibooks.lk/wp-content/uploads/2022/11/ikigai.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="book2.html" target="_blank">Ikigai</a></h5>
+                        <p class="card-text">Hector Carcia and Franecsc miralles</p>
+                        <p class="card-text">$24.99</p>
+                        <p class="card-text">"Ikigai: a Japanese term meaning "a reason for being." The book delves into finding one's purpose and passion, offering insights from the residents of Okinawa, known for their longevity..</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a href="book2.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.KABbS0NUuyl-AI9d6XwFygHaLG?rs=1&pid=ImgDetMain" alt="..." height="400" >
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="book3.html" target="_blank">The guest Book</a></h5>
+                        <p class="card-text">Sarah Blake</p>
+                        <p class="card-text">$29.99</p>
+                        <p class="card-text">"The Guest Book" by Sarah Blake is a multi-generational saga that explores the lives and secrets of the wealthy Milton family. Set against the backdrop of significant historical events, the novel delves into themes of privilege, family legacy, and social change</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a href="book3.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+        <!-- another row-->
+        <div id="fbook">
+            <h2>Fiction Books</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/59e235dcd7bdcec81eb68962/1575923349583-5KH4TDVO8RXU4XBNSI0M/ke17ZwdGBToddI8pDm48kD755XqWqn8HkRX8WSTt5GJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URwn7vetbNoOrjGqAVoZN5bz1XPY0_Ev1nDpBBPOnwUda4oDI66FEaoPF3aKRzQZjg/Historical+Fiction+Where+the+Light+Enters+by+Sara+Donati.jpg" alt="..." height="400" >
+                    <div class="card-body">
+                        <h5 class="card-title">Where the Light enters</a></h5>
+                        <p class="card-text">Sara Donati</p>
+                        <p class="card-text">$19.99</p>
+                        <p class="card-text">"Where the Light Enters" by Sara Donati is a captivating historical fiction novel set against the backdrop of the Civil War. The story follows the lives of two strong-willed women, Sophie and Rosalind, as they navigate love, loss, and the challenges of wartime. Against the backdrop of tumultuous times, the characters must confront their own desires and fears while forging unexpected connections. </p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a  class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.guPr1n05z5yaGa35hCXpyAAAAA?rs=1&pid=ImgDetMain" alt="..." height="400" >
+                    <div class="card-body">
+                        <h5 class="card-title">The Book of lost Names</a></h5>
+                        <p class="card-text">Kristin Harmel</p>
+                        <p class="card-text">$25</p>
+                        <p class="card-text">
+                            "The Book of Lost Names" by Kristin Harmel is a poignant historical novel set during World War II. The story follows Eva Traube Abrams, a young woman forced to flee Paris as the Nazis occupy the city. Amidst the chaos, Eva joins the French Resistance and discovers her talent for forging documents to help Jewish children escape the horrors of the Holocaust.</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a  class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/59e235dcd7bdcec81eb68962/1575923346420-JMLCLRCDNM4XYX2CMNOQ/ke17ZwdGBToddI8pDm48kJF5ay-l9V8mB6cQnyuVGMB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdsRu93NJnnTnrF3G04NpZpQlvqhrKdh3AxLE5JFQSUVDi005ms6_8u9A4oz400EjQ/Historical+Fiction+Mistress+of+the+Ritz+by+Melanie+Benjamin.jpg" alt="..." height="400" >
+                    <div class="card-body">
+                        <h5 class="card-title">Mistress Of the Ritz</h5>
+                        <p class="card-text">Melanie Benjamin</p>
+                        <p class="card-text">$20</p>
+                        <p class="card-text">"Mistress of the Ritz" is a novel written by Melanie Benjamin. Published in 2019, the book is a work of historical fiction that tells the story of Blanche Auzello, the American-born wife of the director of the Ritz hotel in Paris, during the Nazi occupation of France in World War II. The novel explores themes of love, loyalty, and survival against the backdrop of one of the most tumultuous periods in history.</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                        <a  class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <!--another row-->
+            <div id="cbook">
+                <h2>Books for Children</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.PuVY9FTViqXI6dO4ed6WrgHaIJ?rs=1&pid=ImgDetMain" alt="..." height="400" >
+                        <div class="card-body">
+                            <h5 class="card-title">My Quiet Imagination</h5>
+                            <p class="card-text">zoe tucker and Udayana Lugo</p>
+                            <p class="card-text">$12.99</p>
+                            <p class="card-text">"My Quiet Imagination" is a heartfelt exploration of the transformative power of literature, the beauty of human connection, and the magic that awaits us when we dare to follow our dreams. Through its lyrical prose and captivating characters, this novel reminds us that sometimes, the most profound adventures can be found within the pages of a book</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                            <a  class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.wonderkids-e-learningcentre.ca/wp-content/uploads/2021/12/101.jpg" alt="..." height="400" >
+                        <div class="card-body">
+                            <h5 class="card-title">Panchatantra </a></h5>
+                            <p class="card-text">Vishnu Sharma</p>
+                            <p class="card-text">$10</p>
+                            <p class="card-text">"Panchatantra" is a timeless collection of animal fables and moral tales that originated in ancient India. Through the adventures of various animal characters like lions, jackals, monkeys, and birds, the stories impart valuable life lessons on topics such as friendship, cunningness, wisdom, and the consequences of actions.</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                            <a class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.shopify.com/s/files/1/0018/2868/3834/products/9788179205143_1024x1024@2x.jpg?v=1523505775" alt="..." height="400" >
+                        <div class="card-body">
+                            <h5 class="card-title">Two cats and Monkey and other stories</h5>
+<br>
+                            <p class="card-text">$10</p>
+                            <p class="card-text">"Two Cats and a Monkey" and several other stories combined is a folktale from the Panchatantra, a collection of ancient Indian fables.These stories teach a valuable lesson about trust, greed, and the importance of unity and many other values to the children.</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to Cart</a>
+                            <a class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+    <!-- Footer -->
+    <div id="footer">
+    <footer class="bg-light text-center text-lg-start mt-5 " >
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase" >Footer Content</h5>
+                    <p>
+                     We are the Best book sellers in the town known for our great collection of books.People can buy our books both from store as well as from online at their convenience.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark">Terms of Service</a></li>
+                        <li><a href="#" class="text-dark">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">Twitter</a></li>
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            © 2024 BookStore
+        </div>
+    </footer>
 </div>
-<br><br>
-<h2 align="center" class="mt-5">Contact Us</h2>
-<div id="contact">
-  <form>
-   <p> <label for="username">Name:</label>
-    <input type="text" name="name" id="username"></p>
-    <p> <label for="phone">Phone:</label>
-    <input type="tel" name="phone" id="phone"></p>
-    <p>
-    <textarea id="issue" name="issue" rows="6" cols="50" placeholder='Enter your Issue/Complaint here'></textarea ></p>
-    <a href="#" class="btn btn-primary " onclick="issue()">Submit</a>  </form><br>
-
-    <p>For further Queries Contact Us at:</p>
-    <a href="tel:23232 23232">Call Our Customer Care</a><br>
-    <a href="mailto:amazon@cutomercare.com">Mail Us</a>
-</div>
-</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
